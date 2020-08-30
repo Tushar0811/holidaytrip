@@ -161,7 +161,7 @@ html,body{height: 100%;}
 --------------------------------------*/
 .welcome-hero{
     position: relative;
-    background: url(../images/welcome-hero/welcome-banner.jpg) no-repeat;
+    background: url(../images/welcome-hero/welcome.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     height:100vh;
@@ -467,7 +467,7 @@ html,body{height: 100%;}
 --------------------------------------*/
 /* .contact-banner */
 .contact-banner{
-    background: url(../images/contact/contact-banner.jpg) no-repeat center;
+    background: url(../images/contact/cover12.jpg) no-repeat center;
     background-size: cover;
     padding:95px 0 165px;
 }
