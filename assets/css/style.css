@@ -169,8 +169,8 @@ html,body{height: 100%;}
 
 /* .welcome-txt */
 .welcome-txt h2 {
-    font-size: 150px;
-    font-weight:800;
+    font-size: 100px;
+    font-weight:650;
     line-height: 1.51;
     color: #000;
 }
