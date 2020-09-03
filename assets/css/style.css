@@ -459,7 +459,12 @@ html,body{height: 100%;}
     text-transform: none;
 }
 .single-information-box p {
-    font-size: 14px; line-height: 1.93;color: #9a9a9a;margin-top:78px;max-width: 271px;}
+    font-size: 14px;
+    line-height: 1.93;
+    color: #9a9a9a;
+    margin-top:78px;
+    max-width: 271px;
+}
 /* .single-information-box */
 
 /*-------------------------------------
