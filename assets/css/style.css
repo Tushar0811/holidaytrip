@@ -55,7 +55,8 @@ a,a:hover,a:active,a:focus {
 }
 h1,h2,h3,h4,h5,h6 { 
 	margin: 0;
-	color:#50566b;
+    /*background-color: #0c5460 ;*/
+	color:gray;
     font-size: 16px;
     font-weight: 500;
     text-transform: capitalize;
@@ -87,7 +88,7 @@ html,body{height: 100%;}
     font-weight: normal;
     line-height: 1.93;
     text-align: center;
-    color: #9a9a9a;
+    color: gray;
     max-width: 788px;
     margin: 0 auto;
     margin-top:58px;
@@ -172,13 +173,14 @@ html,body{height: 100%;}
     font-size: 100px;
     font-weight:650;
     line-height: 1.51;
-    color: #000;
+    color: gainsboro;
 }
 .welcome-txt p {
-    color: #484848;
+    color: black;
     line-height: 1.93;
     max-width: 700px;
     margin: 15px 0 55px;
+    font-size: 20px;
 }
 .btn.welcome-btn{
     width: 175px;
@@ -205,6 +207,14 @@ html,body{height: 100%;}
     height: 223.5px;
     background: #fff;
     margin-left:142px;
+}
+.service .container-fluid .single-featured-list-txt h3{
+    text-transform: uppercase;
+    font-size: 20px;
+    /*background-color: #9fcdff;*/
+}
+.service .container-fluid .single-featured-list-txt {
+    text-align: justify-all;
 }
 .hero-service:nth-child(1) {
     background: transparent;
@@ -314,6 +324,7 @@ html,body{height: 100%;}
     color: #9a9a9a;
     max-width: 396px;
     margin-top: 15px;
+    /*background-color: lightcyan;*/
 }
 .f-rec {
     width: 20px;
@@ -321,7 +332,9 @@ html,body{height: 100%;}
     background: #2a2a2b;
     margin-right: 12px;
 }
-.single-featured-list:hover{background: #f5f2f2;}
+.single-featured-list:hover {
+    background: #f5f2f2;
+}
 .service .single-featured-list:hover{background:transparent;}
 /* .single-featured-list */
 
