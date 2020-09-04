@@ -528,13 +528,13 @@ html,body{height: 100%;}
 }
 .footer-copyright p,.footer-copyright p a {
     color: #fff;
-    font-size: 14px;
+    font-size: 20px;
     text-transform: capitalize;
 }
 .footer-terms{text-align:center;}
 .footer-terms ul li a {
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     margin-right: 30px;
 }
@@ -549,7 +549,7 @@ html,body{height: 100%;}
     height: 15px;
     background: #fff;
     border-radius: 50%;
-    font-size: 10px;
+    font-size: 14px;
     margin-left: 15px;
 
 }
