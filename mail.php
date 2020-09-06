@@ -3,7 +3,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
-$name = $_REQUEST['name'];
+$name = $_REQUEST['fname'];
 $email = $_REQUEST['email'];
 $txt = $_REQUEST['message'];
 
@@ -34,8 +34,8 @@ $mail->SMTPSecure = "SMTP";
 //Set TCP port to connect to
 $mail->Port = 25;
 
-$mail->From = "noreply@omsaibuildingmaterials.ncrcab.in";
-$mail->FromName = "Goabrige";
+$mail->From = "tushar.udainiyan_cs18@gla.ac.in";
+$mail->FromName = "Tushar Udainiyan";
 //
 $mail->addAddress($email, $name);
 $mail->addAddress("tushar.udainiyan_cs18@gla.ac.in", "Tushar");
@@ -44,14 +44,35 @@ $mail->isHTML(true);
 //
 
 $mail->Subject = "New User";
-$mail->Body = "
-Name:$name<br>
-Message:$txt<br>
-Email:$email<br>";
+$mail->Body = "Thanks for visiting my profile.";
 
 if (!$mail->send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
 } else {
     echo "Message has been sent successfully";
 }
+//$mail = mail("tushar.udainiyan_cs18@gla.ac.in","visit at your profile from".$name,$txt.$email);
+//$mail1= mail($email, "Tushar Udainiyan", "Thanks fro visiting my profile");
+//if($mail){
+//    echo"success";
+//}
+//else{
+//    echo "0";
+//}
 
+//database connection
+
+$conn = new mysqli("localhost", "root", "", "peace");
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "INSERT INTO `entries`(`name`, `email`, `message`) VALUES ('$name','$email','$txt' )";
+
+if ($conn->query($sql) === TRUE) {
+    echo "1";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+$conn->close();
